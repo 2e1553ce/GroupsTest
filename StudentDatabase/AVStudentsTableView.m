@@ -140,10 +140,10 @@
     if(!date) {
         date = @"Не указана";
     }
+    
     cell.textLabel.text = [NSString stringWithFormat:@"Имя: %@ \nФамилия: %@\nДата: %@", [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName],
                                                                                                   [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName],
                                                                                                   date];
-    
     return cell;
 
 }
