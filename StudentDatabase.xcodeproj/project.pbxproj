@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19E69AE21DF7699100DD79FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69AE11DF7699100DD79FE /* main.m */; };
+		19E69AE51DF7699100DD79FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69AE41DF7699100DD79FE /* AppDelegate.m */; };
+		19E69AEE1DF7699100DD79FE /* StudentDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19E69AEC1DF7699100DD79FE /* StudentDatabase.xcdatamodeld */; };
+		19E69AF01DF7699100DD79FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E69AEF1DF7699100DD79FE /* Assets.xcassets */; };
+		19E69AF31DF7699100DD79FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E69AF11DF7699100DD79FE /* LaunchScreen.storyboard */; };
+		19E69AFC1DF76C1500DD79FE /* AVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69AFB1DF76C1500DD79FE /* AVMainViewController.m */; };
+		19E69B001DF76C6500DD79FE /* AVStudentsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69AFF1DF76C6500DD79FE /* AVStudentsTableView.m */; };
+		19E69B031DF76CA100DD79FE /* AVStudentAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69B021DF76CA100DD79FE /* AVStudentAddViewController.m */; };
+		19E69B0D1DF8E6DF00DD79FE /* AVStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69B0C1DF8E6DF00DD79FE /* AVStudent.m */; };
+		19E69B111DF97C5100DD79FE /* noavatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E69B101DF97C5100DD79FE /* noavatar.png */; };
+		21B4251B8B699FF2514B0E9F /* libPods-StudentDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94031DD2E865943CB0C99983 /* libPods-StudentDatabase.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19E69ADD1DF7699100DD79FE /* StudentDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E69AE11DF7699100DD79FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19E69AE31DF7699100DD79FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19E69AE41DF7699100DD79FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19E69AED1DF7699100DD79FE /* StudentDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentDatabase.xcdatamodel; sourceTree = "<group>"; };
+		19E69AEF1DF7699100DD79FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19E69AF21DF7699100DD79FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19E69AF41DF7699100DD79FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E69AFA1DF76C1500DD79FE /* AVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMainViewController.h; sourceTree = "<group>"; };
+		19E69AFB1DF76C1500DD79FE /* AVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMainViewController.m; sourceTree = "<group>"; };
+		19E69AFE1DF76C6500DD79FE /* AVStudentsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStudentsTableView.h; sourceTree = "<group>"; };
+		19E69AFF1DF76C6500DD79FE /* AVStudentsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStudentsTableView.m; sourceTree = "<group>"; };
+		19E69B011DF76CA100DD79FE /* AVStudentAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStudentAddViewController.h; sourceTree = "<group>"; };
+		19E69B021DF76CA100DD79FE /* AVStudentAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStudentAddViewController.m; sourceTree = "<group>"; };
+		19E69B0B1DF8E6DF00DD79FE /* AVStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStudent.h; sourceTree = "<group>"; };
+		19E69B0C1DF8E6DF00DD79FE /* AVStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStudent.m; sourceTree = "<group>"; };
+		19E69B101DF97C5100DD79FE /* noavatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noavatar.png; sourceTree = "<group>"; };
+		29B8FA0CF17B45D879C5742E /* Pods-StudentDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		94031DD2E865943CB0C99983 /* libPods-StudentDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudentDatabase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DBD3F5732AF5EAA0592647 /* Pods-StudentDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19E69ADA1DF7699100DD79FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B4251B8B699FF2514B0E9F /* libPods-StudentDatabase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19E69AD41DF7699100DD79FE = {
+			isa = PBXGroup;
+			children = (
+				19E69ADF1DF7699100DD79FE /* StudentDatabase */,
+				19E69ADE1DF7699100DD79FE /* Products */,
+				AE77AE3953FAB7F4A4664AF2 /* Pods */,
+				8A3EE9F1624DC6F917564B11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19E69ADE1DF7699100DD79FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19E69ADD1DF7699100DD79FE /* StudentDatabase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19E69ADF1DF7699100DD79FE /* StudentDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				19E69B0E1DF8E86C00DD79FE /* Models */,
+				19E69AFD1DF76C1D00DD79FE /* Controllers */,
+				19E69AE31DF7699100DD79FE /* AppDelegate.h */,
+				19E69AE41DF7699100DD79FE /* AppDelegate.m */,
+				19E69AEF1DF7699100DD79FE /* Assets.xcassets */,
+				19E69AF11DF7699100DD79FE /* LaunchScreen.storyboard */,
+				19E69AF41DF7699100DD79FE /* Info.plist */,
+				19E69AEC1DF7699100DD79FE /* StudentDatabase.xcdatamodeld */,
+				19E69B121DF97C5500DD79FE /* Images */,
+				19E69AE01DF7699100DD79FE /* Supporting Files */,
+			);
+			path = StudentDatabase;
+			sourceTree = "<group>";
+		};
+		19E69AE01DF7699100DD79FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19E69AE11DF7699100DD79FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19E69AFD1DF76C1D00DD79FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				19E69AFA1DF76C1500DD79FE /* AVMainViewController.h */,
+				19E69AFB1DF76C1500DD79FE /* AVMainViewController.m */,
+				19E69AFE1DF76C6500DD79FE /* AVStudentsTableView.h */,
+				19E69AFF1DF76C6500DD79FE /* AVStudentsTableView.m */,
+				19E69B011DF76CA100DD79FE /* AVStudentAddViewController.h */,
+				19E69B021DF76CA100DD79FE /* AVStudentAddViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		19E69B0E1DF8E86C00DD79FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19E69B0B1DF8E6DF00DD79FE /* AVStudent.h */,
+				19E69B0C1DF8E6DF00DD79FE /* AVStudent.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		19E69B121DF97C5500DD79FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				19E69B101DF97C5100DD79FE /* noavatar.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8A3EE9F1624DC6F917564B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94031DD2E865943CB0C99983 /* libPods-StudentDatabase.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE77AE3953FAB7F4A4664AF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29B8FA0CF17B45D879C5742E /* Pods-StudentDatabase.debug.xcconfig */,
+				E2DBD3F5732AF5EAA0592647 /* Pods-StudentDatabase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19E69ADC1DF7699100DD79FE /* StudentDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E69AF71DF7699100DD79FE /* Build configuration list for PBXNativeTarget "StudentDatabase" */;
+			buildPhases = (
+				182B0436DACF4EB50B23167A /* [CP] Check Pods Manifest.lock */,
+				19E69AD91DF7699100DD79FE /* Sources */,
+				19E69ADA1DF7699100DD79FE /* Frameworks */,
+				19E69ADB1DF7699100DD79FE /* Resources */,
+				5C8C401B25D70FB71B7C9522 /* [CP] Embed Pods Frameworks */,
+				A1AE248E6DF596F954379200 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentDatabase;
+			productName = StudentDatabase;
+			productReference = 19E69ADD1DF7699100DD79FE /* StudentDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19E69AD51DF7699100DD79FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = A.V.;
+				TargetAttributes = {
+					19E69ADC1DF7699100DD79FE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z48WYVF59J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19E69AD81DF7699100DD79FE /* Build configuration list for PBXProject "StudentDatabase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19E69AD41DF7699100DD79FE;
+			productRefGroup = 19E69ADE1DF7699100DD79FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19E69ADC1DF7699100DD79FE /* StudentDatabase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19E69ADB1DF7699100DD79FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E69AF31DF7699100DD79FE /* LaunchScreen.storyboard in Resources */,
+				19E69B111DF97C5100DD79FE /* noavatar.png in Resources */,
+				19E69AF01DF7699100DD79FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182B0436DACF4EB50B23167A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8C401B25D70FB71B7C9522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1AE248E6DF596F954379200 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19E69AD91DF7699100DD79FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E69B001DF76C6500DD79FE /* AVStudentsTableView.m in Sources */,
+				19E69B031DF76CA100DD79FE /* AVStudentAddViewController.m in Sources */,
+				19E69B0D1DF8E6DF00DD79FE /* AVStudent.m in Sources */,
+				19E69AFC1DF76C1500DD79FE /* AVMainViewController.m in Sources */,
+				19E69AEE1DF7699100DD79FE /* StudentDatabase.xcdatamodeld in Sources */,
+				19E69AE51DF7699100DD79FE /* AppDelegate.m in Sources */,
+				19E69AE21DF7699100DD79FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19E69AF11DF7699100DD79FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19E69AF21DF7699100DD79FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19E69AF51DF7699100DD79FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19E69AF61DF7699100DD79FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19E69AF81DF7699100DD79FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B8FA0CF17B45D879C5742E /* Pods-StudentDatabase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z48WYVF59J;
+				INFOPLIST_FILE = StudentDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivar.vucins.StudentDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19E69AF91DF7699100DD79FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DBD3F5732AF5EAA0592647 /* Pods-StudentDatabase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z48WYVF59J;
+				INFOPLIST_FILE = StudentDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivar.vucins.StudentDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19E69AD81DF7699100DD79FE /* Build configuration list for PBXProject "StudentDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E69AF51DF7699100DD79FE /* Debug */,
+				19E69AF61DF7699100DD79FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E69AF71DF7699100DD79FE /* Build configuration list for PBXNativeTarget "StudentDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E69AF81DF7699100DD79FE /* Debug */,
+				19E69AF91DF7699100DD79FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19E69AEC1DF7699100DD79FE /* StudentDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19E69AED1DF7699100DD79FE /* StudentDatabase.xcdatamodel */,
+			);
+			currentVersion = 19E69AED1DF7699100DD79FE /* StudentDatabase.xcdatamodel */;
+			path = StudentDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19E69AD51DF7699100DD79FE /* Project object */;
+}
