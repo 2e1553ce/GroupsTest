@@ -74,28 +74,6 @@
 
 }
 
-/*
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    CGRect contentRect = self.contentView.bounds;
-    CGFloat boundsX = contentRect.origin.x;
-    
-    CGRect frame;
-    
-    frame = CGRectMake(boundsX + 10 ,0, 50, 50);
-    self.photoImageView.frame = frame;
-    
-    frame = CGRectMake(boundsX + 70 ,5, 200, 25);
-    self.firstNameLabel.frame = frame;
-    
-    frame = CGRectMake(boundsX + 70 ,30, 200, 25);
-    self.lastNameLabel.frame = frame;
-    
-    frame = CGRectMake(boundsX + 70 ,55, 200, 20);
-    self.birthdayLabel.frame = frame;
-}
-*/
 - (BOOL)needsUpdateConstraints {
     return YES;
 }
