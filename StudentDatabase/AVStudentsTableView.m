@@ -8,6 +8,7 @@
 
 #import "AVStudentsTableView.h"
 #import "AVStudentAddViewController.h"
+#import "AVStudentEditViewController.h"
 
 #import <Masonry.h>
 #import <CoreData/CoreData.h>
@@ -17,6 +18,7 @@
 
 @property (strong, nonatomic) NSPersistentContainer *persistentContainer;
 @property (strong, nonatomic) NSArray *arrayOfStudents;
+@property (strong, nonatomic) NSMutableArray *fetchedArrayOfStudents;
 
 @end
 
@@ -50,7 +52,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [self.persistentContainer.viewContext save:nil];
     [self getStudens];
+    
     [self.tableView reloadData];
 }
 
@@ -72,9 +76,9 @@
     [request setEntity:description];
     
     NSError *error = nil;
-    NSArray *resultArray = [context executeFetchRequest:request error:&error];
+    self.fetchedArrayOfStudents = [NSMutableArray arrayWithArray: [context executeFetchRequest:request error:&error]];
     
-    for(id student in resultArray)
+    for(id student in self.fetchedArrayOfStudents)
     {
         AVStudent *stud = [[AVStudent alloc] init];
         stud.firstName = [student valueForKey:@"firstName"];
@@ -135,7 +139,8 @@
         cell.imageView.image = [[self.arrayOfStudents objectAtIndex:indexPath.row] photo];
     }
     
-    cell.textLabel.numberOfLines = 3;
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     NSString *date = [[self.arrayOfStudents objectAtIndex:indexPath.row] birthday];
     if(!date) {
         date = @"Не указана";
@@ -148,16 +153,37 @@
 
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return  YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        [self.persistentContainer.viewContext deleteObject:[self.fetchedArrayOfStudents objectAtIndex:indexPath.row]];
+        [self.persistentContainer.viewContext save:nil];
+        [self.fetchedArrayOfStudents removeObjectAtIndex:indexPath.row];
+
+        self.arrayOfStudents = [NSArray arrayWithArray:self.fetchedArrayOfStudents];
+        
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    AVStudentEditViewController *vc = [[AVStudentEditViewController alloc] init];
+    vc.student = [self.fetchedArrayOfStudents objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 80.f;
 }
+
+
 
 /*
 #pragma mark - Navigation
