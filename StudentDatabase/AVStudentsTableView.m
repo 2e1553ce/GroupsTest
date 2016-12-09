@@ -128,8 +128,6 @@
         cell = [[AVStudentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    //cell.textLabel.font = [UIFont fontWithName:@"ArialMT" size:14];
-    
     CALayer *cellImageLayer = cell.photoImageView.layer;
     [cellImageLayer setCornerRadius:9];
     [cellImageLayer setMasksToBounds:YES];
@@ -140,17 +138,11 @@
         cell.photoImageView.image = [[self.arrayOfStudents objectAtIndex:indexPath.row] photo];
     }
     
-    //cell.textLabel.numberOfLines = 0;
-    //cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     NSString *date = [[self.arrayOfStudents objectAtIndex:indexPath.row] birthday];
     if(!date) {
         date = @"Не указана";
     }
-    
-    //cell.textLabel.text = [NSString stringWithFormat:@"Имя: %@ \nФамилия: %@\nДата: %@", [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName],
-      //                                                                                            [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName],
-        //                                                                                          date];
-    
+
     cell.firstNameLabel.text = [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName];
     cell.lastNameLabel.text = [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName];
     cell.birthdayLabel.text = date;
