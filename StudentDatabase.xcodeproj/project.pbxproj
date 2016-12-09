@@ -18,6 +18,7 @@
 		19E69B0D1DF8E6DF00DD79FE /* AVStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69B0C1DF8E6DF00DD79FE /* AVStudent.m */; };
 		19E69B111DF97C5100DD79FE /* noavatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E69B101DF97C5100DD79FE /* noavatar.png */; };
 		19E69B1C1DFA149500DD79FE /* AVStudentEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69B1B1DFA149500DD79FE /* AVStudentEditViewController.m */; };
+		19E69B201DFB5D3800DD79FE /* AVStudentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E69B1F1DFB5D3800DD79FE /* AVStudentCell.m */; };
 		21B4251B8B699FF2514B0E9F /* libPods-StudentDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94031DD2E865943CB0C99983 /* libPods-StudentDatabase.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		19E69B101DF97C5100DD79FE /* noavatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noavatar.png; sourceTree = "<group>"; };
 		19E69B1A1DFA149500DD79FE /* AVStudentEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStudentEditViewController.h; sourceTree = "<group>"; };
 		19E69B1B1DFA149500DD79FE /* AVStudentEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStudentEditViewController.m; sourceTree = "<group>"; };
+		19E69B1E1DFB5D3800DD79FE /* AVStudentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStudentCell.h; sourceTree = "<group>"; };
+		19E69B1F1DFB5D3800DD79FE /* AVStudentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStudentCell.m; sourceTree = "<group>"; };
 		29B8FA0CF17B45D879C5742E /* Pods-StudentDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 		94031DD2E865943CB0C99983 /* libPods-StudentDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudentDatabase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DBD3F5732AF5EAA0592647 /* Pods-StudentDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudentDatabase/Pods-StudentDatabase.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		19E69ADF1DF7699100DD79FE /* StudentDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				19E69B1D1DFB5D1500DD79FE /* Cells */,
 				19E69B0E1DF8E86C00DD79FE /* Models */,
 				19E69AFD1DF76C1D00DD79FE /* Controllers */,
 				19E69AE31DF7699100DD79FE /* AppDelegate.h */,
@@ -131,6 +135,15 @@
 				19E69B101DF97C5100DD79FE /* noavatar.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		19E69B1D1DFB5D1500DD79FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19E69B1E1DFB5D3800DD79FE /* AVStudentCell.h */,
+				19E69B1F1DFB5D3800DD79FE /* AVStudentCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		8A3EE9F1624DC6F917564B11 /* Frameworks */ = {
@@ -276,6 +289,7 @@
 				19E69B001DF76C6500DD79FE /* AVStudentsTableView.m in Sources */,
 				19E69B031DF76CA100DD79FE /* AVStudentAddViewController.m in Sources */,
 				19E69B0D1DF8E6DF00DD79FE /* AVStudent.m in Sources */,
+				19E69B201DFB5D3800DD79FE /* AVStudentCell.m in Sources */,
 				19E69B1C1DFA149500DD79FE /* AVStudentEditViewController.m in Sources */,
 				19E69AFC1DF76C1500DD79FE /* AVMainViewController.m in Sources */,
 				19E69AEE1DF7699100DD79FE /* StudentDatabase.xcdatamodeld in Sources */,

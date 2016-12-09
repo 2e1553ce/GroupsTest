@@ -9,6 +9,7 @@
 #import "AVStudentsTableView.h"
 #import "AVStudentAddViewController.h"
 #import "AVStudentEditViewController.h"
+#import "AVStudentCell.h"
 
 #import <Masonry.h>
 #import <CoreData/CoreData.h>
@@ -120,35 +121,40 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    AVStudentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if(!cell){
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[AVStudentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.font = [UIFont fontWithName:@"ArialMT" size:14];
+    //cell.textLabel.font = [UIFont fontWithName:@"ArialMT" size:14];
     
-    CALayer *cellImageLayer = cell.imageView.layer;
+    CALayer *cellImageLayer = cell.photoImageView.layer;
     [cellImageLayer setCornerRadius:9];
     [cellImageLayer setMasksToBounds:YES];
     
     if(![[self.arrayOfStudents objectAtIndex:indexPath.row] photo]) {
-        cell.imageView.image = [UIImage imageNamed:@"noavatar"];
+        cell.photoImageView.image = [UIImage imageNamed:@"noavatar"];
     } else {
-        cell.imageView.image = [[self.arrayOfStudents objectAtIndex:indexPath.row] photo];
+        cell.photoImageView.image = [[self.arrayOfStudents objectAtIndex:indexPath.row] photo];
     }
     
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    //cell.textLabel.numberOfLines = 0;
+    //cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     NSString *date = [[self.arrayOfStudents objectAtIndex:indexPath.row] birthday];
     if(!date) {
         date = @"Не указана";
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Имя: %@ \nФамилия: %@\nДата: %@", [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName],
-                                                                                                  [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName],
-                                                                                                  date];
+    //cell.textLabel.text = [NSString stringWithFormat:@"Имя: %@ \nФамилия: %@\nДата: %@", [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName],
+      //                                                                                            [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName],
+        //                                                                                          date];
+    
+    cell.firstNameLabel.text = [[self.arrayOfStudents objectAtIndex:indexPath.row] firstName];
+    cell.lastNameLabel.text = [[self.arrayOfStudents objectAtIndex:indexPath.row] lastName];
+    cell.birthdayLabel.text = date;
+    
     return cell;
 
 }
